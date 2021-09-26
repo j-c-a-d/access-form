@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+</head>
+
+<body>
+    <section>
+        <form action="" method="POST ">
+            <h4>Acceso al sistema</h4>
+            <label for="dni">DNI:</label>
+            <input type="text" name="dni" id="dni" size="25" pattern="[0-9]{8}"
+                placeholder="Ingrese su DNI sin puntos..."
+                title="Agrege un 0 al principio del numero si su DNI es de 7 digitos." required autofocus>
+            <br><br>
+            <label for="usuario">Usuario:</label>
+            <input type="text" name="usuario" id="usuario" size="20" maxlength="50" required>
+            <br><br>
+            <label for="clave">Clave:</label>
+            <input type="password" name="clave" id="clave" size="20" required>
+            <br><br>
+            <input type="submit" value="Ingresar">
+        </form>
+    </section>
+</body>
+
+</html>
